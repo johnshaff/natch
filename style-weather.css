@@ -1,8 +1,38 @@
-ul {
-  display: flex;
-  list-style-type: none;
+body {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-li {
-  margin-right: 10px;
+section {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.navbar li {
+  margin-right: 30px;
+}
+
+.search {
+  min-width: 300px;
+}
+
+.highlight {
+  min-width: 600px;
+}
+
+.location {
+  display: inline;
+}
+
+.temp {
+  display: flex;
+}
+
+.location-extended {
+  display: inline;
 }
