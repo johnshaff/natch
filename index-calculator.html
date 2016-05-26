@@ -8,20 +8,23 @@
   <form id="conversion-form">
     <fieldset>
       <legend>Conversion</legend>
-        <label for="units">Amount to convert <input name="units"></label>
-        <select name="units">
-          <option value="inches">centimeters to inches</option>
-          <option value="centimeters">inches to centimeters</option>
-          <option value="ounces">milliliters to fl ounces</option>
-          <option value="milliliters">fl ounces to milliliters</option>
-          <option value="miles">kilometers to miles</option>
-          <option value="kilometers">miles to kilometer</option>
-          <option value="standard ton">metric ton to standard ton</option>
-          <option value="metric ton">standard ton to metric ton</option>
+        <label for="amount">Amount to convert <input type="text" name="amount"></label>
+        <select name="units" type="text">
+          <option value="0.393">centimeters to inches</option>
+          <option value="2.540">inches to centimeters</option>
+          <option value="0.034">milliliters to fl ounces</option>
+          <option value="29.573">fl ounces to milliliters</option>
+          <option value="0.621">kilometers to miles</option>
+          <option value="1.609">miles to kilometer</option>
+          <option value="0.454">pounds to kilograms</option>
+          <option value="2.205">kilograms to pounds</option>
+          <option value="1.102">metric tons to standard tons</option>
+          <option value="0.907">standard tons to metric tons</option>
         </select>
         <button id="conversion" type="submit">Get conversion rate</button>
       </fieldset>
     </form>
+    <p id="results"></p>
   <script src="app-calculator.js"></script>
 </body>
 </html>
