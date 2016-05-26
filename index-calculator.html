@@ -5,6 +5,23 @@
   <link rel="stylesheet" type="text/css" href="style-calculator.css" />
 </head>
 <body>
+  <form id="conversion-form">
+    <fieldset>
+      <legend>Conversion</legend>
+        <label for="units">Amount to convert <input name="units"></label>
+        <select name="units">
+          <option value="inches">centimeters to inches</option>
+          <option value="centimeters">inches to centimeters</option>
+          <option value="ounces">milliliters to fl ounces</option>
+          <option value="milliliters">fl ounces to milliliters</option>
+          <option value="miles">kilometers to miles</option>
+          <option value="kilometers">miles to kilometer</option>
+          <option value="standard ton">metric ton to standard ton</option>
+          <option value="metric ton">standard ton to metric ton</option>
+        </select>
+        <button id="conversion" type="submit">Get conversion rate</button>
+      </fieldset>
+    </form>
   <script src="app-calculator.js"></script>
 </body>
 </html>
